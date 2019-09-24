@@ -3,7 +3,7 @@ import pop.hub
 
 def start():
     hub = pop.hub.Hub()
-    hub.pop.sub.add('cloud.cloud')
+    hub.pop.sub.add('apid.apid')
 
 
 start()

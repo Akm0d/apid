@@ -7,7 +7,7 @@ import sys
 import shutil
 from setuptools import setup, Command
 
-NAME = 'cloud'
+NAME = 'apid'
 DESC = ('')
 
 # Version info -- read without importing
@@ -61,7 +61,7 @@ setup(name=NAME,
           ],
       entry_points={
         'console_scripts': [
-            'cloud = cloud.scripts:start',
+            'apid = apid.scripts:start',
             ],
           },
       packages=discover_packages(),
