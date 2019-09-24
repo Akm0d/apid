@@ -1,4 +1,5 @@
 from typing import Dict, List, Any, Set, Tuple
+# All clouds must enforce this contract and have these functions available
 
 
 def sig_key_present(
