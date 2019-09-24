@@ -1,8 +1,8 @@
 def __init__(hub):
     print('apid works!')
     hub.pop.conf.integrate('apid', cli='apid', roots=True)
-    hub.apid.init.load_subs()
     hub.apid.init.validate_config()
+    hub.apid.init.load_subs()
 
 
 def load_subs(hub):
