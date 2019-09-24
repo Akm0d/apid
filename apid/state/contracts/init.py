@@ -77,7 +77,7 @@ def sig_instance_present(
         profile: Dict['str', object] or str = None
 ):
     '''
-        Ensure an EC2 instance is running with the given attributes and state.
+        Ensure an provider instance is running with the given attributes and state.
 
         name
             (string) - The name of the state definition.  Recommended that this
@@ -97,13 +97,13 @@ def sig_instance_present(
         key_name
             (string) – The name of the key pair with which to launch instances.
         security_groups
-            (list of strings) – The names of the EC2 classic security groups with
+            (list of strings) – The names of the provider classic security groups with
             which to associate instances
         user_data
             (string) – The Base64-encoded MIME user data to be made available to the
             instance(s) in this reservation.
         instance_type
-            (string) – The EC2 instance size/type.  Note that only certain types are
+            (string) – The provider instance size/type.  Note that only certain types are
             compatible with HVM based AMIs.
         placement
             (string) – The Availability Zone to launch the instance into.
@@ -211,7 +211,7 @@ def sig_instance_present(
             Note that this option is currently UNIMPLEMENTED.
         public_ip:
             (string) - The IP of a previously allocated EIP address, which will be
-            attached to the instance.  EC2 Classic instances ONLY - for VCP pass in
+            attached to the instance.  provider Classic instances ONLY - for VCP pass in
             an allocation_id instead.
         allocation_id:
             (string) - The ID of a previously allocated EIP address, which will be
@@ -249,7 +249,7 @@ def instance_absent(
         filters: Dict[str, Any] = None
 ):
     '''
-    Ensure an EC2 instance does not exist (is stopped and removed).
+    Ensure an provider instance does not exist (is stopped and removed).
 
     .. versionchanged:: 2016.11.0
 
